@@ -39,6 +39,7 @@ yum install pkg-install gnupg chkconfig python3-pip git
 ##### Java Virtual Machine
 
 for DEB
+
 ```bash
 wget -qO- https://apt.corretto.aws/corretto.key | sudo gpg --dearmor  -o /usr/share/keyrings/corretto.gpg
 echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" |  sudo tee -a /etc/apt/sources.list.d/corretto.sources.list
@@ -145,7 +146,6 @@ sudo systemctl enable cassandra
 #### File storage
 
 To store files on the local filesystem, start by choosing the dedicated folder (by default /opt/thp/thehive/files):
-
 
 ```bash
 sudo mkdir -p /opt/thp/thehive/files
@@ -290,7 +290,7 @@ sudo systemctl enable thehive
 
 Once it has started, open your browser and connect to http://YOUR_SERVER_ADDRESS:9000/.
 
-The default admin user is admin@thehive.local with password secret. It is recommended to change the default password.
+The default admin user is <admin@thehive.local> with password secret. It is recommended to change the default password.
 
 ### Cortex
 
